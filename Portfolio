@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkatesh Bathena - Cyber Athlete Portfolio</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .cyber-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes gridPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        @keyframes avatarRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+        }
+
+        .hero-section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+            background: radial-gradient(circle at center, rgba(0, 255, 65, 0.1) 0%, transparent 70%);
+        }
+
+        .athlete-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 255, 65, 0.1) 100%);
+            border: 2px solid #00ff41;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .athlete-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #00ff41, transparent, #00ff41);
+            border-radius: 20px;
+            z-index: -1;
+            animation: borderGlow 2s linear infinite;
+        }
+
+        @keyframes borderGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .athlete-name {
+            font-size: 4rem;
+            font-weight: 900;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #ffffff, #00ff41);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .athlete-title {
+            font-size: 1.5rem;
+            color: #00ff41;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-tagline {
+            font-size: 1.2rem;
+            color: #cccccc;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .stats-board {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff41;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .stats-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00ff41;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-item {
+            background: linear-gradient(135deg, rgba(0, 255, 65, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+            border: 1px solid rgba(0, 255, 65, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 65, 0.3);
+            border-color: #00ff41;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00ff41;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .achievements-section {
+            padding: 3rem 2rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 255, 65, 0.05) 100%);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .achievement-badge {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 255, 65, 0.1) 100%);
+            border: 2px solid rgba(0, 255, 65, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .achievement-badge:hover::before {
+            left: 100%;
+        }
+
+        .achievement-badge:hover {
+            transform: translateY(-10px);
+            border-color: #00ff41;
+            box-shadow: 0 15px 40px rgba(0, 255, 65, 0.3);
+        }
+
+        .achievement-icon {
+            font-size: 3rem;
+            color: #00ff41;
+            margin-bottom: 1rem;
+        }
+
+        .achievement-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-desc {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        .projects-section {
+            padding: 3rem 2rem;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .match-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 255, 65, 0.1) 100%);
+            border: 1px solid rgba(0, 255, 65, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .match-card:hover {
+            border-color: #00ff41;
+            transform: translateX(10px);
+            box-shadow: 0 5px 25px rgba(0, 255, 65, 0.2);
+        }
+
+        .match-info {
+            flex: 1;
+        }
+
+        .match-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .match-desc {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        .match-result {
+            font-size: 2rem;
+            color: #00ff41;
+            font-weight: 700;
+        }
+
+        .mindset-section {
+            padding: 3rem 2rem;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 255, 65, 0.1) 100%);
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #ffffff;
+            font-style: italic;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .quote::before,
+        .quote::after {
+            content: '"';
+            font-size: 3rem;
+            color: #00ff41;
+            font-weight: 700;
+        }
+
+        .mindset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .mindset-item {
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid rgba(0, 255, 65, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .mindset-item:hover {
+            background: rgba(0, 255, 65, 0.2);
+            transform: scale(1.05);
+        }
+
+        .hud-overlay {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff41;
+            border-radius: 10px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            color: #00ff41;
+            z-index: 1000;
+        }
+
+        .energy-trail {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
+            animation: energyFlow 3s linear infinite;
+        }
+
+        @keyframes energyFlow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @media (max-width: 768px) {
+            .athlete-name {
+                font-size: 2.5rem;
+            }
+            
+            .athlete-card {
+                padding: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="cyber-grid"></div>
+  <div class="hud-overlay">
+   <div>
+    STATUS: LEARNING
+   </div>
+   <div>
+    SECURITY: ACTIVE
+   </div>
+   <div>
+    PROGRESS: ADVANCING
+   </div>
+  </div>
+  <main><!-- Hero Section -->
+   <section class="hero-section">
+    <div class="athlete-card neon-glow">
+     <div class="energy-trail"></div>
+     <h1 class="athlete-name" id="athlete-name">VENKATESH BATHENA</h1>
+     <p class="athlete-title" id="athlete-title">Cyber Security Student | Future Analyst | Digital Defender</p>
+     <p class="hero-tagline" id="hero-tagline">Learning to defend the digital world, one skill at a time.</p>
+    </div><!-- Stats Board -->
+    <div class="stats-board">
+     <h2 class="stats-title">Performance Dashboard</h2>
+     <div class="stats-grid">
+      <div class="stat-item">
+       <div class="stat-label">
+        Cyber Skills Score
+       </div>
+       <div class="stat-value" id="cyber-skills-score">
+        ⭐⭐⭐⭐
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-label">
+        CTF Battles Won
+       </div>
+       <div class="stat-value" id="ctf-battles">
+        8
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-label">
+        Projects Completed
+       </div>
+       <div class="stat-value" id="projects-completed">
+        12
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-label">
+        Lab Sessions
+       </div>
+       <div class="stat-value" id="lab-sessions">
+        25
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-label">
+        Tools Learning
+       </div>
+       <div class="stat-value" id="tools-learning">
+        8
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Me Section -->
+   <section class="achievements-section">
+    <h2 class="section-title">Mission Profile</h2>
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+     <div style="position: relative; display: inline-block; margin-bottom: 2rem;">
+      <div style="width: 120px; height: 120px; border: 3px solid #00ff41; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem; margin: 0 auto; animation: avatarRotate 8s linear infinite; background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 255, 65, 0.1) 100%);">
+       🔥
+      </div>
+     </div>
+     <h3 id="about-title" style="font-size: 2.5rem; color: #00ff41; margin-bottom: 1rem; font-weight: 700;">Rising Cyber Warrior</h3>
+     <p id="about-subtitle" style="font-size: 1.3rem; color: #ffffff; margin-bottom: 2rem; font-weight: 600;">Building Skills Through Dedication &amp; Discipline</p>
+     <p id="about-description" style="font-size: 1.1rem; color: #cccccc; line-height: 1.8; max-width: 800px; margin: 0 auto;">I'm a passionate cybersecurity student who approaches learning like an elite athlete approaches training. Every lab session, every CTF challenge, and every certification is a step toward mastering the art of digital defense. My goal is to become a guardian of the digital realm, protecting organizations and individuals from cyber threats.</p>
+    </div>
+    <div class="mindset-grid" style="margin-top: 3rem;">
+     <div class="mindset-item">
+      Continuous Learning
+     </div>
+     <div class="mindset-item">
+      Hands-On Practice
+     </div>
+     <div class="mindset-item">
+      Ethical Mindset
+     </div>
+     <div class="mindset-item">
+      Team Collaboration
+     </div>
+    </div>
+   </section><!-- Technical Achievements -->
+   <section class="achievements-section">
+    <h2 class="section-title">Technical Arsenal</h2>
+    <div class="achievements-grid">
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       🛡️
+      </div>
+      <div class="achievement-title">
+       Network Security
+      </div>
+      <div class="achievement-desc">
+       Firewall Configuration &amp; Monitoring
+      </div>
+     </div>
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       🔍
+      </div>
+      <div class="achievement-title">
+       Vulnerability Assessment
+      </div>
+      <div class="achievement-desc">
+       Scanning &amp; Analysis Tools
+      </div>
+     </div>
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       🐧
+      </div>
+      <div class="achievement-title">
+       Linux Fundamentals
+      </div>
+      <div class="achievement-desc">
+       Command Line &amp; System Admin
+      </div>
+     </div>
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       🐍
+      </div>
+      <div class="achievement-title">
+       Python Scripting
+      </div>
+      <div class="achievement-desc">
+       Security Automation Basics
+      </div>
+     </div>
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       📊
+      </div>
+      <div class="achievement-title">
+       Wireshark Analysis
+      </div>
+      <div class="achievement-desc">
+       Network Traffic Investigation
+      </div>
+     </div>
+     <div class="achievement-badge">
+      <div class="achievement-icon">
+       ⚔️
+      </div>
+      <div class="achievement-title">
+       Ethical Hacking
+      </div>
+      <div class="achievement-desc">
+       Penetration Testing Basics
+      </div>
+     </div>
+    </div>
+   </section><!-- Certificates Section -->
+   <section class="achievements-section">
+    <h2 class="section-title">Championship Trophies</h2>
+    <div class="achievements-grid">
+     <div class="achievement-badge" style="border-color: #FFD700;">
+      <div class="achievement-icon">
+       🏆
+      </div>
+      <div class="achievement-title" id="cert1-name">
+       Cisco CyberOps Associate
+      </div>
+      <div class="achievement-desc">
+       <div id="cert1-issuer">
+        Cisco Systems
+       </div>
+       <div style="color: #00ff41; font-weight: 600; margin-top: 0.5rem;" id="cert1-date">
+        2024
+       </div>
+       <div style="margin-top: 0.5rem;"><span style="background: rgba(255, 215, 0, 0.2); color: #FFD700; padding: 0.2rem 0.5rem; border-radius: 5px; font-size: 0.8rem;">SOC Operations</span>
+       </div>
+      </div>
+     </div>
+     <div class="achievement-badge" style="border-color: #C0C0C0;">
+      <div class="achievement-icon">
+       🥈
+      </div>
+      <div class="achievement-title" id="cert2-name">
+       CompTIA Security+
+      </div>
+      <div class="achievement-desc">
+       <div id="cert2-issuer">
+        CompTIA
+       </div>
+       <div style="color: #00ff41; font-weight: 600; margin-top: 0.5rem;" id="cert2-date">
+        2024
+       </div>
+       <div style="margin-top: 0.5rem;"><span style="background: rgba(192, 192, 192, 0.2); color: #C0C0C0; padding: 0.2rem 0.5rem; border-radius: 5px; font-size: 0.8rem;">Security Fundamentals</span>
+       </div>
+      </div>
+     </div>
+     <div class="achievement-badge" style="border-color: #CD7F32;">
+      <div class="achievement-icon">
+       🥉
+      </div>
+      <div class="achievement-title" id="cert3-name">
+       Ethical Hacking Basics
+      </div>
+      <div class="achievement-desc">
+       <div id="cert3-issuer">
+        Coursera
+       </div>
+       <div style="color: #00ff41; font-weight: 600; margin-top: 0.5rem;" id="cert3-date">
+        2023
+       </div>
+       <div style="margin-top: 0.5rem;"><span style="background: rgba(205, 127, 50, 0.2); color: #CD7F32; padding: 0.2rem 0.5rem; border-radius: 5px; font-size: 0.8rem;">Penetration Testing</span>
+       </div>
+      </div>
+     </div>
+     <div class="achievement-badge" style="border-color: #00ff41;">
+      <div class="achievement-icon">
+       ⭐
+      </div>
+      <div class="achievement-title" id="cert4-name">
+       Python for Security
+      </div>
+      <div class="achievement-desc">
+       <div id="cert4-issuer">
+        Udemy
+       </div>
+       <div style="color: #00ff41; font-weight: 600; margin-top: 0.5rem;" id="cert4-date">
+        2023
+       </div>
+       <div style="margin-top: 0.5rem;"><span style="background: rgba(0, 255, 65, 0.2); color: #00ff41; padding: 0.2rem 0.5rem; border-radius: 5px; font-size: 0.8rem;">Automation</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Projects as Learning Experiences -->
+   <section class="projects-section">
+    <h2 class="section-title">Learning Battles</h2>
+    <div class="match-card">
+     <div class="match-info">
+      <div class="match-title">
+       Home Network Security Lab
+      </div>
+      <div class="match-desc">
+       Built secure home networ
