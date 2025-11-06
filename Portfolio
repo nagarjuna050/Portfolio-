@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venkatesh Bathena - Cyber Athlete Portfolio</title>
+  <title>Nagarjuna dasari - Cyber Athlete Portfolio</title>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
@@ -420,7 +420,7 @@
    <section class="hero-section">
     <div class="athlete-card neon-glow">
      <div class="energy-trail"></div>
-     <h1 class="athlete-name" id="athlete-name">VENKATESH BATHENA</h1>
+     <h1 class="athlete-name" id="athlete-name">NAGARJUNA DASARI</h1>
      <p class="athlete-title" id="athlete-title">Cyber Security Student | Future Analyst | Digital Defender</p>
      <p class="hero-tagline" id="hero-tagline">Learning to defend the digital world, one skill at a time.</p>
     </div><!-- Stats Board -->
@@ -653,4 +653,387 @@
        Home Network Security Lab
       </div>
       <div class="match-desc">
-       Built secure home networ
+       Built secure home network with firewall configuration
+      </div>
+     </div>
+     <div class="match-result">
+      ✅ SECURED
+     </div>
+    </div>
+    <div class="match-card">
+     <div class="match-info">
+      <div class="match-title">
+       Vulnerability Scanner Project
+      </div>
+      <div class="match-desc">
+       Created Python script for basic network scanning
+      </div>
+     </div>
+     <div class="match-result">
+      ✅ CODED
+     </div>
+    </div>
+    <div class="match-card">
+     <div class="match-info">
+      <div class="match-title">
+       CTF Team Participation
+      </div>
+      <div class="match-desc">
+       Competed in university cybersecurity challenges
+      </div>
+     </div>
+     <div class="match-result">
+      ✅ 8 WINS
+     </div>
+    </div>
+    <div class="match-card">
+     <div class="match-info">
+      <div class="match-title">
+       Security Awareness Presentation
+      </div>
+      <div class="match-desc">
+       Educated classmates on phishing prevention
+      </div>
+     </div>
+     <div class="match-result">
+      ✅ SHARED
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section class="achievements-section">
+    <h2 class="section-title">Connect to the Network</h2><!-- Contact Info -->
+    <div style="max-width: 800px; margin: 0 auto 4rem auto;">
+     <h3 style="color: #00ff41; font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">Direct Communication Channels</h3>
+     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      <div class="stat-item" style="cursor: pointer;" onclick="window.open('mailto:nagarjuna.dasari@email.com', '_blank')">
+       <div style="font-size: 2rem; margin-bottom: 0.5rem;">
+        📧
+       </div>
+       <div class="stat-label">
+        Email
+       </div>
+       <div class="stat-value" id="email" style="font-size: 1rem;">
+        nagarjuna.dasari@email.com
+       </div>
+      </div>
+      <div class="stat-item">
+       <div style="font-size: 2rem; margin-bottom: 0.5rem;">
+        📱
+       </div>
+       <div class="stat-label">
+        Phone
+       </div>
+       <div class="stat-value" id="phone" style="font-size: 1rem;">
+        +91 98765 43210
+       </div>
+      </div>
+      <div class="stat-item">
+       <div style="font-size: 2rem; margin-bottom: 0.5rem;">
+        📍
+       </div>
+       <div class="stat-label">
+        Location
+       </div>
+       <div class="stat-value" id="location" style="font-size: 1rem;">
+        Hyderabad, India
+       </div>
+      </div>
+     </div>
+    </div><!-- Social Media -->
+    <div style="max-width: 1000px; margin: 0 auto;">
+     <h3 style="color: #00ff41; font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">Social Networks</h3>
+     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+      <div class="achievement-badge" style="cursor: pointer; position: relative;" onclick="window.open('https://linkedin.com/in/venkateshbathena', '_blank', 'noopener,noreferrer')">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        💼
+       </div>
+       <div class="achievement-title">
+        LinkedIn
+       </div>
+       <div class="achievement-desc" id="linkedin-handle">
+        @nagarjunadasari
+       </div>
+      </div>
+      <div class="achievement-badge" style="cursor: pointer; position: relative;" onclick="window.open('https://github.com/venkateshbathena', '_blank', 'noopener,noreferrer')">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        💻
+       </div>
+       <div class="achievement-title">
+        GitHub
+       </div>
+       <div class="achievement-desc" id="github-handle">
+        @nagarjunadasari
+       </div>
+      </div>
+      <div class="achievement-badge" style="cursor: pointer; position: relative;" onclick="window.open('https://twitter.com/venkatesh_sec', '_blank', 'noopener,noreferrer')">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        🐦
+       </div>
+       <div class="achievement-title">
+        Twitter
+       </div>
+       <div class="achievement-desc" id="twitter-handle">
+        @nagarjuna_sec
+       </div>
+      </div>
+      <div class="achievement-badge" style="cursor: pointer; position: relative;">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        🎮
+       </div>
+       <div class="achievement-title">
+        Discord
+       </div>
+       <div class="achievement-desc" id="discord-handle">
+        Nagarjuna#2024
+       </div>
+      </div>
+      <div class="achievement-badge" style="cursor: pointer; position: relative;" onclick="window.open('https://medium.com/@venkateshbathena', '_blank', 'noopener,noreferrer')">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        📝
+       </div>
+       <div class="achievement-title">
+        Medium
+       </div>
+       <div class="achievement-desc" id="medium-handle">
+        @nagarjunadasari
+       </div>
+      </div>
+      <div class="achievement-badge" style="cursor: pointer; position: relative;" onclick="window.open('https://youtube.com/@VenkateshCyber', '_blank', 'noopener,noreferrer')">
+       <div class="energy-trail"></div>
+       <div style="font-size: 2.5rem; margin-bottom: 1rem;">
+        📺
+       </div>
+       <div class="achievement-title">
+        YouTube
+       </div>
+       <div class="achievement-desc" id="youtube-handle">
+        nagarjunaCyber
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Mindset Section -->
+   <section class="mindset-section">
+    <div class="quote" id="main-quote">
+     Every challenge is a chance to level up
+    </div>
+    <p style="color: #cccccc; font-size: 1.1rem; margin-bottom: 2rem;">Learning cybersecurity with the heart of a champion</p>
+    <div class="mindset-grid">
+     <div class="mindset-item">
+      Curiosity
+     </div>
+     <div class="mindset-item">
+      Persistence
+     </div>
+     <div class="mindset-item">
+      Ethics
+     </div>
+     <div class="mindset-item">
+      Growth
+     </div>
+    </div>
+   </section>
+  </main>
+  <script>
+        // Initialize Element SDK
+        const defaultConfig = {
+            athlete_name: "NAGARJUNA DASARI",
+            athlete_title: "Cyber Security Student | Future Analyst | Digital Defender",
+            hero_tagline: "Learning to defend the digital world, one skill at a time.",
+            cyber_skills_score: "⭐⭐⭐⭐",
+            ctf_battles: "8",
+            projects_completed: "12",
+            lab_sessions: "25",
+            tools_learning: "8",
+            about_title: "Rising Cyber Warrior",
+            about_subtitle: "Building Skills Through Dedication & Discipline",
+            about_description: "I'm a passionate cybersecurity student who approaches learning like an elite athlete approaches training. Every lab session, every CTF challenge, and every certification is a step toward mastering the art of digital defense. My goal is to become a guardian of the digital realm, protecting organizations and individuals from cyber threats.",
+            cert1_name: "Cisco CyberOps Associate",
+            cert1_issuer: "Cisco Systems",
+            cert1_date: "2024",
+            cert2_name: "CompTIA Security+",
+            cert2_issuer: "CompTIA",
+            cert2_date: "2024",
+            cert3_name: "Ethical Hacking Basics",
+            cert3_issuer: "Coursera",
+            cert3_date: "2023",
+            cert4_name: "Python for Security",
+            cert4_issuer: "Udemy",
+            cert4_date: "2023",
+            email: "nagarjuna dasari@email.com",
+            phone: "+91 98765 43210",
+            location: "Hyderabad, India",
+            linkedin_handle: "@nagarjuna",
+            github_handle: "@nagarjuna",
+            twitter_handle: "@venkatesh_sec",
+            discord_handle: "nagarjuna#2024",
+            medium_handle: "@nagarjunadasari",
+            youtube_handle: "NagarjunaCyber"
+        };
+
+        async function onConfigChange(config) {
+            // Update hero section
+            document.getElementById('athlete-name').textContent = config.athlete_name || defaultConfig.athlete_name;
+            document.getElementById('athlete-title').textContent = config.athlete_title || defaultConfig.athlete_title;
+            document.getElementById('hero-tagline').textContent = config.hero_tagline || defaultConfig.hero_tagline;
+            
+            // Update stats
+            document.getElementById('cyber-skills-score').textContent = config.cyber_skills_score || defaultConfig.cyber_skills_score;
+            document.getElementById('ctf-battles').textContent = config.ctf_battles || defaultConfig.ctf_battles;
+            document.getElementById('projects-completed').textContent = config.projects_completed || defaultConfig.projects_completed;
+            document.getElementById('lab-sessions').textContent = config.lab_sessions || defaultConfig.lab_sessions;
+            document.getElementById('tools-learning').textContent = config.tools_learning || defaultConfig.tools_learning;
+
+            // Update about section
+            document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+            document.getElementById('about-subtitle').textContent = config.about_subtitle || defaultConfig.about_subtitle;
+            document.getElementById('about-description').textContent = config.about_description || defaultConfig.about_description;
+
+            // Update certificates
+            document.getElementById('cert1-name').textContent = config.cert1_name || defaultConfig.cert1_name;
+            document.getElementById('cert1-issuer').textContent = config.cert1_issuer || defaultConfig.cert1_issuer;
+            document.getElementById('cert1-date').textContent = config.cert1_date || defaultConfig.cert1_date;
+            document.getElementById('cert2-name').textContent = config.cert2_name || defaultConfig.cert2_name;
+            document.getElementById('cert2-issuer').textContent = config.cert2_issuer || defaultConfig.cert2_issuer;
+            document.getElementById('cert2-date').textContent = config.cert2_date || defaultConfig.cert2_date;
+            document.getElementById('cert3-name').textContent = config.cert3_name || defaultConfig.cert3_name;
+            document.getElementById('cert3-issuer').textContent = config.cert3_issuer || defaultConfig.cert3_issuer;
+            document.getElementById('cert3-date').textContent = config.cert3_date || defaultConfig.cert3_date;
+            document.getElementById('cert4-name').textContent = config.cert4_name || defaultConfig.cert4_name;
+            document.getElementById('cert4-issuer').textContent = config.cert4_issuer || defaultConfig.cert4_issuer;
+            document.getElementById('cert4-date').textContent = config.cert4_date || defaultConfig.cert4_date;
+
+            // Update contact info
+            document.getElementById('email').textContent = config.email || defaultConfig.email;
+            document.getElementById('phone').textContent = config.phone || defaultConfig.phone;
+            document.getElementById('location').textContent = config.location || defaultConfig.location;
+
+            // Update social handles
+            document.getElementById('linkedin-handle').textContent = config.linkedin_handle || defaultConfig.linkedin_handle;
+            document.getElementById('github-handle').textContent = config.github_handle || defaultConfig.github_handle;
+            document.getElementById('twitter-handle').textContent = config.twitter_handle || defaultConfig.twitter_handle;
+            document.getElementById('discord-handle').textContent = config.discord_handle || defaultConfig.discord_handle;
+            document.getElementById('medium-handle').textContent = config.medium_handle || defaultConfig.medium_handle;
+            document.getElementById('youtube-handle').textContent = config.youtube_handle || defaultConfig.youtube_handle;
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["athlete_name", config.athlete_name || defaultConfig.athlete_name],
+                ["athlete_title", config.athlete_title || defaultConfig.athlete_title],
+                ["hero_tagline", config.hero_tagline || defaultConfig.hero_tagline],
+                ["cyber_skills_score", config.cyber_skills_score || defaultConfig.cyber_skills_score],
+                ["ctf_battles", config.ctf_battles || defaultConfig.ctf_battles],
+                ["projects_completed", config.projects_completed || defaultConfig.projects_completed],
+                ["lab_sessions", config.lab_sessions || defaultConfig.lab_sessions],
+                ["tools_learning", config.tools_learning || defaultConfig.tools_learning],
+                ["about_title", config.about_title || defaultConfig.about_title],
+                ["about_subtitle", config.about_subtitle || defaultConfig.about_subtitle],
+                ["about_description", config.about_description || defaultConfig.about_description],
+                ["cert1_name", config.cert1_name || defaultConfig.cert1_name],
+                ["cert1_issuer", config.cert1_issuer || defaultConfig.cert1_issuer],
+                ["cert1_date", config.cert1_date || defaultConfig.cert1_date],
+                ["cert2_name", config.cert2_name || defaultConfig.cert2_name],
+                ["cert2_issuer", config.cert2_issuer || defaultConfig.cert2_issuer],
+                ["cert2_date", config.cert2_date || defaultConfig.cert2_date],
+                ["cert3_name", config.cert3_name || defaultConfig.cert3_name],
+                ["cert3_issuer", config.cert3_issuer || defaultConfig.cert3_issuer],
+                ["cert3_date", config.cert3_date || defaultConfig.cert3_date],
+                ["cert4_name", config.cert4_name || defaultConfig.cert4_name],
+                ["cert4_issuer", config.cert4_issuer || defaultConfig.cert4_issuer],
+                ["cert4_date", config.cert4_date || defaultConfig.cert4_date],
+                ["email", config.email || defaultConfig.email],
+                ["phone", config.phone || defaultConfig.phone],
+                ["location", config.location || defaultConfig.location],
+                ["linkedin_handle", config.linkedin_handle || defaultConfig.linkedin_handle],
+                ["github_handle", config.github_handle || defaultConfig.github_handle],
+                ["twitter_handle", config.twitter_handle || defaultConfig.twitter_handle],
+                ["discord_handle", config.discord_handle || defaultConfig.discord_handle],
+                ["medium_handle", config.medium_handle || defaultConfig.medium_handle],
+                ["youtube_handle", config.youtube_handle || defaultConfig.youtube_handle]
+            ]);
+        }
+
+        // Initialize SDK when available
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Add dynamic effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate stats on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.stat-item, .achievement-badge, .match-card').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add glitch effect to name on hover
+            const athleteName = document.getElementById('athlete-name');
+            athleteName.addEventListener('mouseenter', function() {
+                this.style.animation = 'glitch 0.3s ease';
+            });
+
+            athleteName.addEventListener('animationend', function() {
+                this.style.animation = '';
+            });
+        });
+
+        // Add glitch animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes glitch {
+                0% { transform: translate(0); }
+                20% { transform: translate(-2px, 2px); }
+                40% { transform: translate(-2px, -2px); }
+                60% { transform: translate(2px, 2px); }
+                80% { transform: translate(2px, -2px); }
+                100% { transform: translate(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'998c8fcbf1a74013',t:'MTc2MjE4MDE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
